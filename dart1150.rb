@@ -1,6 +1,6 @@
 require 'formula'
 
-class Dart < Formula
+class Dart1150 < Formula
   homepage 'https://www.dartlang.org/'
 
   version '1.15.0'
