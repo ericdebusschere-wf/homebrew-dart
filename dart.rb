@@ -70,5 +70,4 @@ class Dart < Formula
         #{opt_prefix}/Chromium.app
     EOS
   end
-
 end
