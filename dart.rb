@@ -38,6 +38,12 @@ class Dart < Formula
     end
   end
 
+  resource 'content_shell' do
+    version '1.17.0-dev.2.0'
+    url 'https://storage.googleapis.com/dart-archive/channels/dev/release/1.17.0-dev.2.0/dartium/content_shell-macos-ia32-release.zip'
+    sha256 '6e1522aae7e6772bf68f5d119d5e904a0687044a06913db06a3333088b3b523c'
+  end
+
   def install
     libexec.install Dir['*']
     bin.install_symlink "#{libexec}/bin/dart"
