@@ -62,3 +62,4 @@ class Dart < Formula
     EOS
   end
 end
+end
