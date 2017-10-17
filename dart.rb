@@ -65,7 +65,6 @@ class Dart < Formula
   def caveats; <<-EOS.undent
     Please note the path to the Dart SDK:
       #{opt_libexec}
-
     --with-dartium:
       To use with IntelliJ, set the Dartium execute home to:
         #{opt_prefix}/Chromium.app
@@ -73,7 +72,7 @@ class Dart < Formula
   end
 
   test do
-    (testpath/'sample.dart').write <<-EOS.undent
+    (testpath//'sample.dart').write <<-EOS.undent
       void main() {
         print(r"test message");
       }
