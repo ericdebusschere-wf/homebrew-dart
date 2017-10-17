@@ -31,10 +31,11 @@ class Dart < Formula
       sha256 '6e1522aae7e6772bf68f5d119d5e904a0687044a06913db06a3333088b3b523c'
     end
 
-  resource 'dartium' do
-    version '1.20.1'
-    url 'https://storage.googleapis.com/dart-archive/channels/stable/release/1.20.1/dartium/dartium-macos-x64-release.zip'
-    sha256 'c35a4ecda5ff81fb5557a7161350f1fa630d80eb42f8ad94f8a17e1fad6b0fe3'
+    resource 'dartium' do
+      version '1.20.1'
+      url 'https://storage.googleapis.com/dart-archive/channels/stable/release/1.20.1/dartium/dartium-macos-x64-release.zip'
+      sha256 'c35a4ecda5ff81fb5557a7161350f1fa630d80eb42f8ad94f8a17e1fad6b0fe3'
+    end
   end
 
   def install
@@ -61,5 +62,4 @@ class Dart < Formula
       exec "#{prefix}/#{target}" "$@"
     EOS
   end
-end
 end
