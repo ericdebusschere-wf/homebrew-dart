@@ -71,13 +71,4 @@ class Dart < Formula
     EOS
   end
 
-  test do
-    (testpath//'sample.dart').write <<-EOS.undent
-      void main() {
-        print(r"test message");
-      }
-    EOS
-
-    assert_equal "test message\n", shell_output("#{bin}/dart sample.dart")
-  end
 end
